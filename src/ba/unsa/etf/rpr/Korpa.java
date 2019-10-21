@@ -21,7 +21,7 @@ public class Korpa {
         for(int j=i; j<trenutnoUKorpi - 1; j++) {
           artikl[j] = artikl[j+1];
       }
-        artikli[trenutnoUKorpi--] = null;
+        artikli[--trenutnoUKorpi] = null;
         return pomocni;
     }
   }
