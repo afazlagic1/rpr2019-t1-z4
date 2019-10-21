@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Supermarket {
-  private int final maksUSupermarketu = 1000;
+  private final int maksUSupermarketu = 1000;
   private Artikl[] artikl = new Artikl[maksUSupermarketu];
   private int trenutnoUSupermarketu = 0;
   public Artikl[] getArtikli() {
@@ -19,7 +19,7 @@ public class Supermarket {
         for(int j=i; j<trenutnoUSupermarketu - 1; j++) {
           artikl[j] = artikl[j+1];
       }
-        artikli[--trenutnoUSupermarketu] = null;
+        artikl[--trenutnoUSupermarketu] = null;
         return pomocni;
     }
   }

@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr;
 
 public class Korpa {
-  private int finale maksUKorpi = 50;
+  private final int maksUKorpi = 50;
   private Artikl[] artikl = new Artikl[maksUKorpi];
   private int trenutnoUKorpi = 0;
   public Artikl[] getArtikli() {
@@ -21,7 +21,7 @@ public class Korpa {
         for(int j=i; j<trenutnoUKorpi - 1; j++) {
           artikl[j] = artikl[j+1];
       }
-        artikli[--trenutnoUKorpi] = null;
+        artikl[--trenutnoUKorpi] = null;
         return pomocni;
     }
   }
